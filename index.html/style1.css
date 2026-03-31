@@ -1,0 +1,194 @@
+body{
+    min-height: 100vh;
+    background-image: url("marbre1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   font-size: 1em;
+   background-attachment: fixed;
+   text-align: center;
+    color: gray;
+       font-family: "Poiret One", sans-serif; 
+
+}
+
+
+
+nav{
+    padding: 60px 0;
+   
+    
+}
+h1{ 
+    font-size: 1.3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Poiret One", sans-serif; 
+    font-weight: 100; 
+    height: 10px; 
+     margin: 50px;
+   padding: 0;
+   
+   
+} 
+h2{ 
+    font-size: 5em;
+    color: #f2cbd9;
+     font-family: "Great Vibes", cursive;
+     margin: 0;
+   padding: 0;
+}
+img{
+    
+    width: 80px;
+     height: auto;
+    
+} 
+.millieu-container{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+   padding: 0;
+}
+.millieu-container img {
+    margin-top: 20px;
+}
+.socials {
+   margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.socials a {
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  font-size: 1em;
+  
+  
+}
+.socials img {
+  width: 50px;
+}
+.tiktok-container {
+    
+    margin: 10px 50px 0px 0px;
+}
+.tiktok-container img { 
+    width: 60px;
+}
+
+ .site{ 
+
+    flex-direction: row;
+    align-items: center;
+ background-color: #f2cbd9;
+    font-family: "Poiret One", sans-serif; 
+    font-weight: 200; 
+    border: 1px white solid; 
+    
+    font-size: 0.9em;
+    width: 180px;
+    height: 30px;
+    border-radius: 7px;
+    padding: 15px;
+
+
+}
+.site:active{
+    background-color: white;
+     border: 1px solid #E8B7C8; 
+     color:#E8B7C8
+    
+   
+}
+ a{ 
+    
+    text-decoration: none; 
+    color: white; 
+}
+@media (max-width: 768px) {
+
+    /* BODY : ajuste le background pour mobile */
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url("marbre2.PNG");
+        background-size: cover; /* reste cover pour remplir l'écran */
+        background-attachment: scroll; /* fixed bug sur iPhone */
+        font-size: 0.9em;
+    }
+
+    /* NAV : réduire padding */
+    nav {
+        padding: 30px 0;
+    }
+
+    /* TITRES */
+    h1 {
+        font-size: 1em;
+        flex-direction: column;
+        margin: 30px 10px;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    /* LOGO ET IMAGE */
+    img {
+        width: 60px;
+        height: auto;
+    }
+
+    .millieu-container img {
+        margin-top: 15px;
+    }
+
+    /* SOCIALS */
+    .socials {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .socials a {
+        flex-direction: row;
+        font-size: 0.9em;
+        gap: 5px;
+    }
+
+    .socials img {
+        width: 40px;
+    }
+
+    .tiktok-container {
+        margin: 5px 0 0 0;
+    }
+
+    .tiktok-container img {
+        width: 50px;
+    }
+
+    /* BOUTON */
+    .site {
+        font-size: 0.8em;
+        width: 150px;
+        height: auto;
+        padding: 10px;
+    }
+}

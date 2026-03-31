@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- tout ce qui est en haut c'est ce que tu dois noter pour chaque début de code -->
+    <title>Commande - Lalycake</title>
+    <!--titre qui va apparraitre pour l'ordinateur pas pour la personne qui voit le site-->
+    <link href="style.css" rel="stylesheet"><!--pour faire que ton fichier css se relie au ficher html -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <!--lien pour mettre l'ecriture de style pour le site-->
+</head>
+
+    <body>
+        <header id="contact">
+            <nav>
+                    <!-- Le href="#contact" c'est un code comme un spawn-->
+                    <img class="logo" src="logo.PNG" alt="logo lalyacake en rose pale et blanc" title="logo lalycake">
+                
+                <a href="accueil.html">Accueil</a>
+                <a href="reservation.html">Réservation</a>
+                <a href="catalogue.html">Catalogue</a>
+                <a class="commander" href="commander.html">Commander</a>
+            </nav>
+        </header>
+<div class="phantom">
+        <section class="firm">
+            <p>
+            <h2>📌 Customise ton gâteau maintenant</h2>
+            <p class="form-intro">
+Remplis ce formulaire pour créer un gâteau unique, fait spécialement pour toi.
+</p>
+
+            <form action="https://formspree.io/f/mpqjdnad" method="POST">
+                <div class="form1">
+                    <label for="occasion">Pour quelle occasion commandez-vous ?</label><br>
+                    <textarea name="occasion" id="occasion"></textarea>
+                </div>
+
+                <div class="form2">
+                    <br> Quel modèle de gâteau voulez-vous ?
+                </div>
+
+                <div class="form3">
+                    <br> <input type="radio" name="modele" value="layer" id="layer"> <label for="layer">Layers
+                        cakes</label>
+                    <input type="radio" name="modele" value="bento" id="bento"> <label for="bento">Bento cakes</label>
+                </div>
+
+                <div class="form4">
+                    <br>Quel génoise voulez-vous ?
+                </div>
+
+                <div class="form5">
+                    <br><input type="radio" name="choix" value="chocolat" id="chocolat"> <label
+                        for="chocolat">Chocolat</label>
+                    <input type="radio" name="choix" value="vanille" id="vanille"> <label for="vanille">Vanille</label>
+                
+                </div>
+                <div class="form6">
+                <br> <label for="autres">Autres</label> <br><textarea name="autres" id="autres"></textarea>
+                </div>
+                <div class="form4">
+                <br>Quel crème voulez-vous ?
+            </div>
+
+            <div class="form5">
+                <br><input type="radio" name="choix2" value="chocolat" id="chocolat"> <label
+                    for="chocolat">Chocolat</label>
+                <input type="radio" name="choix2" value="vanille" id="vanille"> <label for="vanille">Vanille</label>
+               
+                </div>
+              
+
+                  <div class="form4">
+                    <br>Quel autre goût voulez-vous
+                </div>
+
+                <div class="form5">
+                    <br><input type="radio" name="choix" value="Framboise" id="Framboise"> <label for="Framboise">Framboise</label>
+                    <input type="radio" name="choix" value="Fraise" id="Fraise"> <label for="vanille">Fraise</label><br>
+                    <input type="radio" name="choix" value="Mangue" id="Mangue"> <label for="Mangue">Mangue</label>
+                    <input type="radio" name="choix" value="Caramel" id="Caramel"> <label for="Caramel">Caramel</label><br>
+                    <input type="radio" name="choix" value="Spéculos" id="Spéculos"> <label for="Spéculos">Spéculos</label>
+                    <input type="radio" name="choix" value="Kinder Bueno" id="Kinder Bueno"> <label for="Kinder Bueno">Kinder Bueno</label><br>
+                </div>
+                <div class="form6">
+                <br> <label for="autres">Autres</label> <br><textarea name="autres" id="autres"></textarea>
+                </div>
+
+                <div class="form1">
+                <br><label for="theme">Si vous avez un thème spécifique, n’hésitez pas à me le faire savoir.</label>
+                <br><textarea name="theme" id="theme"></textarea>
+                </div>
+
+                <div class="form7">
+                <br> Combien de parts voulez-vous ?
+                </div>
+
+                <div class="form8">
+                <br><input type="radio" name="nombre" value="2" id="2"> <label for="2">2</label>
+                <input type="radio" name="nombre" value="4" id="4"> <label for="4">4</label>
+                <br> <input type="radio" name="nombre" value="6-8" id="6-8"> <label for="6-8">6-8</label>
+                <input type="radio" name="nombre" value="10-12" id="10-12"> <label for="10-12">10-12</label>
+                <br> <input type="radio" name="nombre" value="15" id="15"> <label for="15">15</label>
+                <input type="radio" name="nombre" value="20" id="20"> <label for="20">20</label>
+                <br><input type="radio" name="nombre" value="+30" id="+30"> <label for="+30">+30</label>
+                </div>
+
+                <div class="form9">
+                    <br><label for="informations">Veuillez m'indiquer un moyen de vous joindres</label>
+                    <br><textarea name="informations" id="informations" placeholder="Ex: votre instagram"></textarea>
+                </div>
+                <br><label for="dates">Entrez le jour auquel vous souhaitez récupérer le gâteau</label>
+                <br><input type="date" name="dates" id="dates" value="2025-01-01" min="2025-01-01" max="2030-12-31"><br><br>
+<div class="form-submit">
+    <img class="logo" src="logo.PNG" alt="logo lalyacake en rose pale et blanc" title="logo lalycake">
+    <button type="submit">Envoyer ma commande</button><br>
+</div>
+            </form>
+            </p>
+        </section>
+    </div>
+    </body>
+</html>
